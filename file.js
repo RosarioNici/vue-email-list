@@ -22,7 +22,7 @@ const app = new Vue({
                         });
                 }
             } else (this.mails && !10); {
-                alert('Genero 10 mail non di più non di meno Grazie')
+                alert('Genero 10 mail, non di più non di meno. Grazie 😃')
             }
         },
     },
