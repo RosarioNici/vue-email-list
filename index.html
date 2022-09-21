@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Vue Mail List</title>
+</head>
+
+<body>
+    <section id="root">
+        <div class="container-mail">
+            <div>
+                <input type="text" v-model="mails" @keyup.enter="generateMailList">
+                <button @click="generateMailList">Email</button>
+                <div v-for="email in mailsList">{{email}}</div>
+            </div>
+        </div>
+    </section>
+    <script src="./file.js"></script>
+</body>
+
+</html>
